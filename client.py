@@ -15,7 +15,6 @@ bot = commands.Bot(intents=intents, command_prefix='$$')
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
     await bot.load_extension('game')
-    await bot.load_extension('ask_ai')
     await bot.load_extension('utilities_extension')
     print("loaded extensions")
     await bot.tree.sync()
